@@ -1,0 +1,60 @@
+from abc import ABC, abstractmethod
+
+class CARS(ABC):
+    @abstractmethod
+    def cn(self, companyname):
+        pass
+
+    @abstractmethod
+    def specie(self):
+        pass
+
+
+class Swift(CARS):
+    def cn(self, companyname):
+        print(f"Swift is the car of {companyname}")
+
+    def specie(self):
+        print("Swift is a Hatchback")
+
+
+class Model_S(CARS):
+    def cn(self, companyname):
+        print(f"Model S is the car of {companyname}")
+
+    def specie(self):
+        print("Model S is an Electric Sedan")
+
+
+class Fortuner(CARS):
+    def cn(self, companyname):
+        print(f"Fortuner is the car of {companyname}")
+
+    def specie(self):
+        print("Fortuner is an SUV")
+
+
+class City(CARS):
+    def cn(self, companyname):
+        print(f"City is the car of {companyname}")
+
+    def specie(self):
+        print("City is a Sedan")
+
+
+class Creta(CARS):
+    def cn(self, companyname):
+        print(f"Creta is the car of {companyname}")
+
+    def specie(self):
+        print("Creta is a Compact SUV")
+
+
+# Objects
+n1 = Swift()
+n1.cn("Maruti Suzuki")
+n1.specie()
+
+cn2 = Model_S()
+cn2.cn("Tesla")
+cn2.specie()
